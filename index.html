@@ -6,34 +6,43 @@
 	<title>Olga Lutsenko Calling Card</title>
 	<link rel="stylesheet" type="text/css" href="styles/site_styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
-	<link rel="stylesheet" type="text/css" href="styles/ionicons.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Cedarville+Cursive&family=Grape+Nuts&family=Homemade+Apple&family=Open+Sans:ital,wght@0,300;0,500;1,400;1,500;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,500;1,8..144,900&family=Roboto:wght@400;500;700&family=Tiro+Gurmukhi&display=swap" rel="stylesheet">
-
-	
+	<link rel="stylesheet" type="text/css" href="styles/animated2.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="styles/font-awesome/css/font-awesome.min.css">
+ -->
+ 	<script src="https://kit.fontawesome.com/6136fc52ec.js" crossorigin="anonymous"></script>
+ 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Cedarville+Cursive&family=Grape+Nuts&family=Homemade+Apple&family=Open+Sans:ital,wght@0,300;0,500;1,400;1,500;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,500;1,8..144,900&family=Roboto:wght@400;500;700&family=Tiro+Gurmukhi&family=Tiro+Tamil&family=Tiro+Telugu&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 </head>
 
 <body>
-	<header>
+	<header id="header">
 
 		<nav>
 
 			<p id="logo-site"><a href="#">Ольга Луценко</p>
+
 			
 			<ul id="main-nav">
-				<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-				<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-				<li><a href="#">Обо мне</a></li>
-				<li><a href="#">Журналистика</a></li>
-				<li><a href="#">Веб-разработка</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="#header-text">Обо мне</a></li>
+				<li><a href="#logo">Журналистика</a></li>
+				<li><a href="#development">Веб-разработка</a></li>
+				<li><a href="#contact-form-section">Контакты</a></li>
 
 			</ul>
+
+			<a class="mobile-nav-icon"><i class="fa-sm fa-solid fa-bars"></i></a>
+
 		</nav>
 
 
 		<div class="col-6" id="header-text">
 			
-			<p>Привет всем! Меня зовут Ольга Луценко (псевдоним Гриневич). Больше 12 лет я работаю с текстом, как журналист, редактор и копирайтер. Я собираю истории и подаю их аудитории в разных форматах – начиная с репортажей и заканчивая лонг-ридами.</p>
+			<p>Привет всем! Меня зовут Ольга Луценко (Гриневич). Я журналист, редактор и начинающий веб-разработчик. Я работаю в федеральных изданиях свыше 12 лет и могу превратить даже самый унылый сюжет в захватывающую историю. Веб-разработка стала логическим развитием моей карьеры. Писать код, как выяснилось, – сложно, но в то же время очень увлекательно :)</p>
 		
 
 		</div>
@@ -45,7 +54,7 @@
 
 	</header>
 
-		<div class="logo">
+		<div id="logo">
 
 		<a href="#" class="logo-button"><img src="images/invest-foresight.png" alt="logo">
 		</a>
@@ -56,6 +65,14 @@
 		</div>
 			
 			<h2>Лучшие тексты</h2>
+
+			<div class="hello">
+
+			<p>Я начала работать журналистом, когда училась на втором курсе университета. Сначала я писала репортажи на острые социальные темы, за которые меня наградили национальной премией "Искра". Потом работала редактором в корпоративных СМИ – "Твой МегаФон", "Золотой Вавилон" и BUSINESS CAR. Затем был крупный проект "Неделя" поб брендом "Известий". Последние семь лет я пишу о стартапах и всем, что с ними связано, для журналов "Компания" и "Инвест-Форсайт".   
+			</p>
+
+			</div>
+
 			<div class="grid-container">
 				<div class="grid-item"><a href="https://iz.ru/news/501614"><img src="images/read.jpeg" alt="photo of article"></a><h4>Черным <br> по белому</h4></div>
 				<div class="grid-item"><a href="https://www.if24.ru/nikolaj-mohov-ya-ubezhdennyj-kriptoanarhist/"><img src="images/moxov.jpeg" alt="photo of article"></a><h4>Николай Мохов: <br>«Я убежденный криптоанархист»</h4></div>
@@ -67,6 +84,31 @@
 				<div class="grid-item"><a href="https://www.if24.ru/umnye-zamki-nuki/"><img src="images/zamok.jpeg" alt="photo of article"></a><h4>На рынок <br> loT-устройств <br> вышли «умные замки»</h4></div>
 				<div class="grid-item"><a href="https://www.if24.ru/vremya-est-nasekomyh/"><img src="images/shuk.jpeg" alt="photo of article"></a><h4>Черви <br>в батончике: <br>время есть насекомых</h4></div>
 			</div>
+
+			<section id="development">
+
+				<h2>Веб-разработка</h2>
+
+			<div class="hello"> 
+					
+				<p>Этот сайт-визитка, на котором вы сейчас находитесь, – уже мой второй проект. Первый, сайт суши-ресторана, я сверстала в рамках курса Udemy "Создание современных адаптивных сайтов. HTML 5, CSS 3". Оба проекта работают на базе библиотеки jQuery. Все файлы доступны на GitHub – нужно всего лишь кликнуть на картинку.</p>
+					</div>
+
+				<div class="examples">
+					<div class="col-4">
+							<a href="https://github.com/Tuvemumi-lu/sushi-store.git"><img src="images/sushi.DYWyH.png" alt="sushi store"></a>
+						</div>
+					</div>
+					
+					<div class="col-4">
+							<img src="images/coming-soon-1.jpeg" alt="coming soon">
+						</div>
+
+							<div class="col-4">
+							<img src="images/coming-soon-1.jpeg" alt="coming soon">
+				</div>
+
+			</section>
 
 		<section id="contact-form-section">
 		<h2>Связаться со мной</h2>
@@ -80,7 +122,6 @@
 					
 				</div>
 				
-
 			</div>
 
 			<div class="form-row float-clearing">
@@ -159,8 +200,9 @@
 		</footer>
 
 
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="scripts/jQuery.js"></script>
 
 </body>
 </html>

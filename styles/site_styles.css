@@ -4,13 +4,14 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 body {
 	background-color: #fff;
 	color: #141619;
-	font-family: 'Tiro Gurmukhi', serif;
+	font-family: 'Tiro Telugu', serif;
 	font-weight: 400;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
@@ -21,6 +22,7 @@ html, body {
 	padding: 0;
 	width: 100%;
 	overflow-x: hidden; 
+
 }
 
 .col-1 {width: 8.33%;}
@@ -39,7 +41,6 @@ html, body {
 [class*="col-"] {
   float: left;
   padding: 3%;
-  border: 1px solid red;
 }
 
 header {
@@ -52,28 +53,44 @@ header {
 	
 }
 
-h4 {
-	margin: 0;
+section {
+	padding: 100px 0;
+	clear: both;
 }
 
+.float-clearing {
+	zoom: 1;
+}
+
+.float-clearing:after {
+	zoom: 1;
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+/******** Header Styles*******/
+
+
 #header-text {
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 	color: #394042;
 	font-size: 1em;
 	border: none;
-	padding: 200px 30px 260px 70px;
+	padding: 200px 30px 0px 70px;
+
 
 }
 
 h2 {
-	font-family: 'Tiro Gurmukhi', serif;
 	text-transform: uppercase;
 	font-weight: 250;
 	color: #394042;
 	letter-spacing: 1px;
 	word-spacing: 2px;
 	text-align: center;
-	margin-top: 100px;
 	margin-bottom: 50px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -86,7 +103,6 @@ h2:after {
 	content: " ";
 	width: 150px;
 	margin: 0 auto;
-	margin-top: 30px;
 }
 
 #maim-text {
@@ -111,10 +127,63 @@ h2:after {
 	font-size: 0.8em;
 }
 
-#main-nav li a {
+#main-nav li a:link, 
+#main-nav li a:visited {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #394042;
+	opacity: 0.8;
+}
+
+#main-nav li a:hover,
+#main-nav li a:active {
+	opacity: 1;
+}
+
+#sticky-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #b6b7c6;
+	z-index: 999;
+	box-shadow: 0 2px 2px #eff0f3;
+
+}
+
+#sticky-nav #main-nav li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #394042;
+}
+
+#sticky-nav #main-nav li a:link,
+#sticky-nav #main-nav li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #394042;
+	opacity: 0.8;
+}
+
+#sticky-nav #main-nav li a:hover,
+#sticky-nav #main-nav li a:active {
+	opacity: 1;
+	border-bottom: 2px solid #394042;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+
+#sticky-nav #logo-site {
+	position: fixed;
+	width: 100%;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #33342F;
+	letter-spacing: 7px;
+	font-family: 'Tiro Tamil', serif;
+	padding-left: 20px;
 }
 
 #logo-site a {
@@ -122,8 +191,16 @@ h2:after {
 	text-transform: uppercase;
 	color: #33342F;
 	letter-spacing: 7px;
-	font-family: 'Tiro Gurmukhi', serif;
+	font-family: 'Tiro Tamil', serif;
 	padding-left: 20px;
+}
+
+#sticky-nav .mobile-nav-icon {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin-right: 20px;
+	margin-top: 10px;
 }
 
 nav {
@@ -132,23 +209,38 @@ nav {
 	padding: 20px;
 }
 
+.mobile-nav-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	display: none;
+	font-size: 200%;
+}
+
+
 #selfi {
-	width: 80%;
+	width: 100%;
+	padding: 50px 100px 70px 0px;
 
 }
 
 #portret-container {
 	border: none;
 	padding: 70px 0px 0px 0px;
+	position: right fixed;
+
 }
 
 /*********logo of newspapers styles*******/
 
 .logo-button img {
 	height: 70px;
-	margin-right: 4%;
-	margin-bottom: 80px;
-	margin-left: 40px;
+	margin-right: 2%;
+	margin-bottom: 100px;
+	margin-left: 3%;
 
 }
 
@@ -156,7 +248,6 @@ h3 {
 	text-transform: uppercase;
 	color: #33342F;
 	letter-spacing: 5px;
-	font-family: 'Tiro Gurmukhi', serif;
 	text-align: center;
 	margin-bottom: 30px;
 	margin-left: 20px;
@@ -178,18 +269,27 @@ h3:after {
 /*******Сетка********/
 
 .grid-container {
+	display: -ms-grid;
 	display: grid;
 	text-align: center;
+	width: 100%;
+	-ms-grid-columns: 250px 250px 250px;
 	grid-template-columns: 250px 250px 250px;
+	-ms-grid-rows: 250px 250px 250px;
 	grid-template-rows: 250px 250px 250px;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	grid-gap: 15px;
+	margin-bottom: 100px;
+	margin-top: 50px;
 }
 
 .grid-item img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	opacity: 0.6;
 	position: relative;
 } 
@@ -208,18 +308,40 @@ h3:after {
 
 }
 
+/*********Web Development styles********/
+
+
+#development {
+	background-image: url(../images/white_wall.png);
+	padding-top: 60px;
+	overflow: hidden;
+}
+
+.hello {
+	text-align: center;
+	letter-spacing: 3px;
+	color: #394042;
+	font-size: 1em;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+
+.col-4 img {
+	width: 100%;
+	height: 100%;
+
+}
+
 /*********Contact styles********/
 
 
 #contact-form-section {
-	width: 40%;
-	margin: 0 auto; 
+	width: 50%;
+	margin-top: 0 auto;
+	margin-left: 350px;
 
 } 
-
-.col-6 {
-	border: none;
-}
 
 input[type=text],
 input[type=email],
@@ -241,14 +363,19 @@ textarea {
 
 footer {
 	text-align: center;
-	margin-top: 600px;
-	padding: 110px 0;
+	margin-top: 50px;
+	padding: 100px;
 	background-image: url(../images/white_wall.png);
 	color: #33342F;
 }
 
 #footer-nav {
 	margin-bottom: 30px;
+
+}
+
+#footer-nav ul {
+	list-style-type: none;
 }
 
 #footer-nav li a:link,
@@ -270,3 +397,48 @@ footer {
 	font-size: 80%;
 }
 
+/*/*********Media Query styles********/
+
+@media only screen and (max-width: 970px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  #contact-form-section {
+  	margin-left: 30px;
+	width: 80%;
+  }
+
+  #selfi{
+  	padding: 0px;
+  }
+
+  .logo-button img {
+  	margin: 20px;
+  }
+
+  #development {
+  	padding-left: 30px;
+  }
+
+.mobile-nav-icon {
+	display: inline-block;
+}
+
+#main-nav {
+	float: right;
+	margin-top: 30px;
+	display: none;
+
+}
+
+#main-nav li {
+	display: block;
+	padding: 10px 0px;
+}
+
+#main-nav li a:link,
+#main-nav li a:visited {
+	display: block;
+}
