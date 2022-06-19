@@ -44,7 +44,7 @@ html, body {
 }
 
 header {
-	background-image: url(../images/white_wall.png);
+	background-image: url(../images/white_wall-min.png);
 	margin-bottom: 60px;
 	background-position: center;
 	background-size: cover;
@@ -312,7 +312,7 @@ h3:after {
 
 
 #development {
-	background-image: url(../images/white_wall.png);
+	background-image: url(../images/white_wall-min.png);
 	padding-top: 60px;
 	overflow: hidden;
 }
@@ -365,7 +365,7 @@ footer {
 	text-align: center;
 	margin-top: 50px;
 	padding: 100px;
-	background-image: url(../images/white_wall.png);
+	background-image: url(../images/white_wall-min.png);
 	color: #33342F;
 }
 
@@ -405,6 +405,22 @@ footer {
     width: 100%;
   }
 
+  #header-text {
+  	padding: 70px 30px 0px 50px;
+
+  }
+
+  #logo {
+  	padding-bottom: 50px;
+  }
+
+  .col-4 img {
+	width: 80%;
+	height: 80%;
+	padding-top: 20px;
+
+}
+
   #contact-form-section {
   	margin-left: 30px;
 	width: 80%;
@@ -422,23 +438,41 @@ footer {
   	padding-left: 30px;
   }
 
-.mobile-nav-icon {
+  .mobile-nav-icon {
 	display: inline-block;
-}
+  }
 
-#main-nav {
+  #main-nav {
 	float: right;
 	margin-top: 30px;
 	display: none;
 
-}
+  }
 
-#main-nav li {
+  #main-nav li {
 	display: block;
 	padding: 10px 0px;
-}
+  } 
 
-#main-nav li a:link,
-#main-nav li a:visited {
+  #main-nav li a:link,
+  #main-nav li a:visited {
 	display: block;
+  }
+
+  .grid-container {
+	display: -ms-grid;
+	display: grid;
+	text-align: center;
+	width: 100%;
+	-ms-grid-columns: 250px 250px;
+	grid-template-columns: 250px 250px;
+	-ms-grid-rows: 250px 250px;
+	grid-template-rows: 250px 250px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	grid-gap: 15px;
+	margin-bottom: 100px;
+	margin-top: 50px;
+  }
 }
